@@ -7,13 +7,13 @@ class Person {
 	get name(){
 		return this.name;
 	}
-	set age(age){
+	set setAge(age){
 		this.age = age;
 	}
 }
 
 class Student extends Person {
-	constructor(){
+	constructor(name,age){
 		super(name,age)
 	}
 	study(){
@@ -22,7 +22,7 @@ class Student extends Person {
 }
 
 class Teacher extends Person {
-	constructor(){
+	constructor(name,age){
 		super(name,age)
 	}
 	teach(){
